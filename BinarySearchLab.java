@@ -8,66 +8,64 @@ import java.util.Scanner;
    shrinking search interval can be traced. The program prints the index of
    the target if found, or -1 if not found.
 
-   Programmed by: <ZYRELL KENT REYES OLOROSO> <BSIT> <DATA STRUCTURES AND ALGORITHM>
+   Programmed by: <ROSEL LOU E. ANDRAJE> <BSIT> <DATA STRUCTURES AND ALGORITHM>
    Last Modified: <SEPT 4, 2026>
    Version: 1.0
    Acknowledgements: <list any sites/sources or generative AI tools used, with the prompt, per your lab requirements>
 */
-public class BinarySearchLab {
+import java.util.Arrays;
+import java.util.Scanner;
 
-    // Recursive binary search: prints low/high/mid on every call
-    public static int binarySearch(int[] arr, int low, int high, int target) {
+public class Binary_Search {
+
+    public static int bSearch(int[] arr, int target, int low, int high) {
         if (low > high) {
-            // Base case: interval is empty, target is not in the array
-            System.out.println("binarySearch(" + low + ", " + high + ", target) -> not found");
             return -1;
         }
-
-        int mid = (low + high) / 2;
-        System.out.println("binarySearch(" + low + ", " + high + ", " + target + ") -> mid=" + mid + ", array[mid]=" + arr[mid]);
-
+        int mid = low + (high - low) / 2;
         if (arr[mid] == target) {
-            // Base case: target found at mid
             return mid;
-        } else if (arr[mid] > target) {
-            // Target must be in the left half
-            return binarySearch(arr, low, mid - 1, target);
-        } else {
-            // Target must be in the right half
-            return binarySearch(arr, mid + 1, high, target);
         }
+        if (target < arr[mid]) {
+            return bSearch(arr, target, low, mid - 1);
+        }
+        return bSearch(arr, target, mid + 1, high);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter the number of elements: ");
-        int n = Integer.parseInt(sc.nextLine().trim());
+        System.out.print("Enter the number of elements in the array: ");
+        int n = sc.nextInt();
 
-        int[] arr = new int[n];
-        System.out.println("Enter " + n + " elements one at a time:");
+        int[] numbers = new int[n];
+
+        System.out.println("Enter " + n + " elements of the array:");
         for (int i = 0; i < n; i++) {
-            System.out.print("Element " + (i + 1) + ": ");
-            arr[i] = Integer.parseInt(sc.nextLine().trim());
+            System.out.print("Element [" + i + "]: ");
+            numbers[i] = sc.nextInt();
         }
 
-        // Binary search requires a sorted array
-        Arrays.sort(arr);
-        System.out.println("Sorted array: " + Arrays.toString(arr));
+        Arrays.sort(numbers);
+        System.out.println("Sorted array: " + Arrays.toString(numbers));
 
-        System.out.print("Enter the target value: ");
-        int target = Integer.parseInt(sc.nextLine().trim());
+        System.out.print("Enter the target value to search for: ");
+        int target = sc.nextInt();
 
-        System.out.println("\n--- Recursive trace ---");
-        int result = binarySearch(arr, 0, arr.length - 1, target);
+        int result = bSearch(
+                numbers,
+                target,
+                0,
+                numbers.length - 1
+        );
 
-        System.out.println("\n--- Result ---");
-        if (result != -1) {
-            System.out.println("Target " + target + " found at index: " + result);
+        if (result == -1) {
+            System.out.println("Element not found.");
+            System.out.println(-1);
         } else {
-            System.out.println("Target " + target + " not found. Output: -1");
+            System.out.println("Element found at index: " + result);
         }
 
-        sc.close();
+        sc.close(); 
     }
 }
