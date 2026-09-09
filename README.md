@@ -1,4 +1,4 @@
-# Laboratory Activity: Recursion
+<img width="756" height="368" alt="image" src="https://github.com/user-attachments/assets/bad835d3-cb04-4729-b551-d1af24b6df42" /># Laboratory Activity: Recursion
 
 ## Description
 A Java program that performs a recursive binary search on a user-entered
@@ -8,13 +8,9 @@ recursive call prints the current `low`, `high`, and `mid` values so the
 shrinking search interval can be traced. The program outputs the index of
 the target if found, or `-1` if the target is not in the array.
 
-## PTask 1 – Recursion Trace
+## Task 1 – Recursion Trace
 <img width="756" height="368" alt="image" src="https://github.com/user-attachments/assets/ce100bb2-98bc-4914-b06e-077efbf9cd88" />
-## How to Compile and Run
-```
-javac BinarySearchLab.java
-java BinarySearchLab
-```
+## Task 2 – Modified Binary Search Program
 
 ## Sample Input
 ```
