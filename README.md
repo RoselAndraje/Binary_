@@ -8,9 +8,8 @@ recursive call prints the current `low`, `high`, and `mid` values so the
 shrinking search interval can be traced. The program outputs the index of
 the target if found, or `-1` if the target is not in the array.
 
-## Programming Language
-Java
-
+## PTask 1 – Recursion Trace
+<img width="756" height="368" alt="image" src="https://github.com/user-attachments/assets/ce100bb2-98bc-4914-b06e-077efbf9cd88" />
 ## How to Compile and Run
 ```
 javac BinarySearchLab.java
