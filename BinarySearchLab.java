@@ -1,6 +1,3 @@
-import java.util.Arrays;
-import java.util.Scanner;
-
 /* Description: Performs a recursive binary search on a user-provided array.
    The user enters the number of elements, the elements themselves, and the
    target value. The array is sorted ascending before the search runs, and
@@ -13,6 +10,7 @@ import java.util.Scanner;
    Version: 1.0
    Acknowledgements: <list any sites/sources or generative AI tools used, with the prompt, per your lab requirements>
 */
+
 import java.util.Arrays;
 import java.util.Scanner;
 
