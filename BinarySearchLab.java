@@ -8,7 +8,7 @@
    Programmed by: <ROSEL LOU E. ANDRAJE> <BSIT> <DATA STRUCTURES AND ALGORITHM>
    Last Modified: <SEPT 4, 2026>
    Version: 1.0
-   Acknowledgements: <Claude, used it to fix the missing charaters/letters on my code with the prompt used " fix all the missing letters and characters in my code."
+   Acknowledgements: <I used Claude to fix the missing characters and letters in my code, using the prompt "fix all the missing letters and characters in my code."
 */
 
 import java.util.Arrays;
