@@ -8,7 +8,7 @@
    Programmed by: <ROSEL LOU E. ANDRAJE> <BSIT> <DATA STRUCTURES AND ALGORITHM>
    Last Modified: <SEPT 4, 2026>
    Version: 1.0
-   Acknowledgements: <list any sites/sources or generative AI tools used, with the prompt, per your lab requirements>
+   Acknowledgements: <Claude, used it to fix the missing charaters/letters on my code with the prompt used " fix all the missing letters and characters in my code."
 */
 
 import java.util.Arrays;
