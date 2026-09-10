@@ -32,4 +32,4 @@ Java (developed and tested against Java SE — no external libraries beyond java
 
 ## AI Disclosure
 
-During this activity, I used Claude (Anthropic) to help modify the given recursive binary search program to accept user input and display a recursion trace, to generate and verify a recursion trace table, to draft answers to the reflection questions, and to help format and organize the final submission, including a Word document and code screenshots.
+I used Claude to fix missing characters and letters in my code, by asking it to identify and correct any letters or symbols that were missing throughout the program.
