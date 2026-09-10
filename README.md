@@ -32,9 +32,4 @@ Java (developed and tested against Java SE — no external libraries beyond java
 
 ## AI Disclosure
 
-Portions of this submission were developed with the assistance of Claude (Anthropic), an AI assistant, used within a chat conversation. Claude helped:
-
-modify the original recursive binary search program to accept user input and automatically sort the array before searching,
-add a recursive-call trace (low, high, mid) to visualize how the search interval narrows at each step,
-construct and verify a recursion-trace table against manual tracing, and
-draft written explanations for the accompanying reflection questions.
+During this activity, I used Claude (Anthropic) to help modify the given recursive binary search program to accept user input and display a recursion trace, to generate and verify a recursion trace table, to draft answers to the reflection questions, and to help format and organize the final submission, including a Word document and code screenshots.
