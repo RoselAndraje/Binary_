@@ -32,4 +32,4 @@ Java (developed and tested against Java SE — no external libraries beyond java
 
 ## AI Disclosure
 
-I used Claude to fix missing characters and letters in my code, by asking it to identify and correct any letters or symbols that were missing throughout the program.
+I used claude to fix my code and correct all the wrongs in my program for it to work.
