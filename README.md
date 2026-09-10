@@ -108,6 +108,17 @@ binarySearch(7, 8, 25) -> mid=7, array[mid]=25
 Target 25 found at index: 7
 ```
 
+## AI Disclosure
+
+Portions of this submission were developed with the assistance of Claude (Anthropic), an AI assistant, used within a chat conversation. Claude helped:
+
+modify the original recursive binary search program to accept user input and automatically sort the array before searching,
+add a recursive-call trace (low, high, mid) to visualize how the search interval narrows at each step,
+construct and verify a recursion-trace table against manual tracing, and
+draft written explanations for the accompanying reflection questions.
+
+
+
 ## Task 4 – Explanation
 1. What are the three laws of recursion? Briefly describe each law.
 Law 1-A recursive algorithm must have a base case. This is the condition under which the function. stops calling itself and returns a result directly, rather than recursing further. In binary search, there are two base cases: finding the target (arrinidae) and exhausting the search interval (sow high).
