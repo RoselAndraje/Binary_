@@ -90,9 +90,12 @@ import java.util.Scanner;
     }
 }
 
+## input and output
 <img width="538" height="320" alt="image" src="https://github.com/user-attachments/assets/69b40ad1-b817-4b48-82bc-80d92d520caa" />
 
 <img width="553" height="305" alt="image" src="https://github.com/user-attachments/assets/e8e33578-82d6-4752-82ad-c330556d6e80" />
+
+
 
 
 ## Task 3 – Search Trace
